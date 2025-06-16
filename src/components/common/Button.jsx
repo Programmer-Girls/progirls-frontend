@@ -1,0 +1,41 @@
+import React from 'react';
+
+/**
+ * @param {object} props
+ * * @param {React.ReactNode} props.children
+ * * @param {'primary' | 'secondary'} [props.variant='primary'] 
+ * * @param {string} [props.className=''] 
+ * * @param {function} [props.onClick]
+ * * @param {object} [rest]
+ * @returns {JSX.Element}
+ */
+
+const Button = ({
+    children,
+    variant = 'primary',
+    className = '',
+    onClick,
+    ...rest
+}) => {
+    const baseClasses = "px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105";
+
+    const primaryClasses = "bg-[var(--color-progirls-primary)] text-[var(--color-progirls-white)] hover:bg-purple-700 shadow-md";
+
+    const secondaryClasses = "bg-transparent border-2 border-[var(--color-progirls-highlight)] text-[var(--color-progirls-highlight)]"
+
+
+    const combinedClasses = `${baseClasses} ${variant === 'primary' ? primaryClasses : secondaryClasses}`;
+
+
+    return (
+        <button
+            className={combinedClasses}
+            onClick={onClick}
+            {...rest}
+        >
+            {children}
+        </button>
+    );
+};
+
+export default Button;
