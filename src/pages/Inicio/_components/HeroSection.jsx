@@ -1,6 +1,3 @@
-// src/pages/Inicio/_components/HeroSection.jsx
-
-import React from 'react';
 import ImageGallery from './ImageGallery.jsx';
 import Button from '../../../components/common/Button.jsx';
 
@@ -16,7 +13,8 @@ const HeroSection = () => {
     return (
         <section className="relative bg-[--color-black] text-[--color-white] py-20 px-4 md:px-16 flex flex-col md:flex-row items-center justify-between min-h-[calc(100vh-80px)] overflow-hidden">
             <div className="md:w-1/2 flex flex-col items-start space-y-6 z-10">
-                <h1 className="font-heading font-medium text-[56px] leading-[1] text-center max-w-[777px] mx-auto">
+                <h1 className="font-medium text-[56px] leading-[1] text-center max-w-[777px] mx-auto"
+                 style={{ fontFamily: 'var(--font-heading)' }}>
                     Empoderando <span className="text-[var(--color-primary)]">Mulheres</span> no Mundo da <span className="text-[var(--color-highlight)]">Tecnologia</span>
                 </h1>
 
