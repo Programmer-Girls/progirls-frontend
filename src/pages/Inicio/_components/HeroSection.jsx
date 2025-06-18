@@ -1,6 +1,7 @@
 // src/pages/Inicio/_components/HeroSection.jsx
 
 import React from 'react';
+import ImageGallery from './ImageGallery.jsx';
 import Button from '../../../components/common/Button.jsx';
 
 const HeroSection = () => {
@@ -34,6 +35,7 @@ const HeroSection = () => {
             </div>
 
             <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center items-center z-10">
+                <ImageGallery />
             </div>
 
             <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[--color-highlight] opacity-30 rounded-full filter blur-3xl"></div>
@@ -42,8 +44,6 @@ const HeroSection = () => {
 
             <div className="absolute -bottom-24 -left-20 w-80 h-80 bg-[var(--color-highlight)] opacity-30 rounded-full filter blur-3xl"></div>
             <div className="absolute -top-32 -right-32 w-96 h-96 bg-[var(--color-primary)] opacity-20 rounded-full filter blur-3xl"></div>
-
-
 
         </section>
     );
