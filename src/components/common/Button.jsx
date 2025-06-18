@@ -17,11 +17,11 @@ const Button = ({
     onClick,
     ...rest
 }) => {
-    const baseClasses = "px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105";
+    const baseClasses = "px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105";
 
-    const primaryClasses = "bg-[var(--color-progirls-primary)] text-[var(--color-progirls-white)] hover:bg-purple-700 shadow-md";
+    const primaryClasses = "bg-[var(--color-primary)] text-[var(--color-white)] hover:bg-purple-700 hover:cursor-pointer shadow-md";
 
-    const secondaryClasses = "bg-transparent border-2 border-[var(--color-progirls-highlight)] text-[var(--color-progirls-highlight)]"
+    const secondaryClasses = "bg-transparent border-2 border-[var(--color-highlight)] text-[var(--color-highlight)]"
 
 
     const combinedClasses = `${baseClasses} ${variant === 'primary' ? primaryClasses : secondaryClasses}`;

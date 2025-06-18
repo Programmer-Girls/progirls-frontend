@@ -1,14 +1,22 @@
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Comunidade from "./pages/Comunidade/Comunidade";
+import Sobre from "./pages/Sobre/Sobre";
+import Voluntariado from "./pages/Voluntariado/Voluntariado";
+import Contato from "./pages/Contato/Contato";
 
 
 export default function App() {
   return(
-   <main>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <p className="text-lg text-gray-700">
-      This is a simple React app with Tailwind CSS.
-    </p>
-   </main>
+   <>
+    <Header/>
+
+    <Routes>
+      <Route path='/comunidade' element={<Comunidade/>}></Route>
+      <Route path='/sobre' element={<Sobre/>}></Route>
+      <Route path='/voluntariado' element={<Voluntariado/>}></Route>
+      <Route path='/contato' element={<Contato/>}></Route>
+    </Routes>
+   </>
   )
 }

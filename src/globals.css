@@ -1,15 +1,28 @@
 @import "tailwindcss";
 
-:root {
-    --color-progirls-purple-vibrant: #6600FF;   /* Roxo vibrante */
-    --color-progirls-primary: #9929EA;    /* Cor Principal do Site */
-    --color-progirls-accent: #B14677;    /* Cor Realce (Rosa/Vinho) */
-    --color-progirls-highlight: #CDF527;    /* Cor Principal de Destaque (Verde-limão) */
-    --color-progirls-white: #FFFFFF;    /* Branco */
-    --color-progirls-black: #000000;    /* Preto */
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
 }
 
-body {
-  background-color: var(--color-progirls-black);
-  color: var(--color-progirls-white);
+:root {
+    --color-purple-vibrant: #6600FF;   /* Roxo vibrante */
+    --color-primary: #9929EA;    /* Cor Principal do Site */
+    --color-accent: #B14677;    /* Cor Realce (Rosa/Vinho) */
+    --color-highlight: #CDF527;    /* Cor Principal de Destaque (Verde-limão) */
+    --color-white: #FFFFFF;    /* Branco */
+    --color-black: #000000;    /* Preto */
 }
+
+@layer base {
+  :root {
+    color-scheme: dark
+  }
+
+  .dark {
+    color-scheme: light;
+  }
+}
+
