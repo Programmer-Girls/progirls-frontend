@@ -3,16 +3,19 @@ import Button from '../../../components/common/Button.jsx';
 
 const HeroSection = () => {
     const handleVemComAGenteClick = () => {
-        console.log('Botão "Vem com a gente!" clicado!');
+        window.open('https://chat.whatsapp.com/ElygZKByOGl8MP7ZFVgzdm', '_blank', 'noopener');
+        if (newWindow) newWindow.opener = null;
     };
 
     const handleSaibaMaisClick = () => {
-        console.log('Botão "Saiba Mais" clicado!');
+        window.open('https://chat.whatsapp.com/ElygZKByOGl8MP7ZFVgzdm', '_blank', 'noopener');
+        if (newWindow) newWindow.opener = null;
+
     };
 
     return (
         <section className="relative bg-[--color-black] text-[--color-white] py-20 px-4 md:px-16 flex flex-col md:flex-row items-center justify-between min-h-[calc(100vh-80px)] overflow-hidden">
-            <div className="md:w-1/2 flex flex-col items-start space-y-6 z-10">
+            <div className="md:w-1/2 flex flex-col items-center space-y-6 z-10">
                 <h1 className="font-medium text-[56px] leading-[1] text-center max-w-[777px] mx-auto"
                  style={{ fontFamily: 'var(--font-heading)' }}>
                     Empoderando <span className="text-[var(--color-primary)]">Mulheres</span> no Mundo da <span className="text-[var(--color-highlight)]">Tecnologia</span>
@@ -35,10 +38,6 @@ const HeroSection = () => {
             <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center items-center z-10">
                 <ImageGallery />
             </div>
-
-            <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[--color-highlight] opacity-30 rounded-full filter blur-3xl"></div>
-            <div className="absolute -top-32 -right-32 w-96 h-96 bg-[--color-primary] opacity-20 rounded-full filter blur-3xl"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[--color-accent] opacity-5 rounded-full filter blur-3xl"></div>
 
             <div className="absolute -bottom-24 -left-20 w-80 h-80 bg-[var(--color-highlight)] opacity-30 rounded-full filter blur-3xl"></div>
             <div className="absolute -top-32 -right-32 w-96 h-96 bg-[var(--color-primary)] opacity-20 rounded-full filter blur-3xl"></div>
