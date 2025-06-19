@@ -21,7 +21,7 @@ const Button = ({
 
     const primaryClasses = "bg-[var(--color-primary)] text-[var(--color-white)] hover:bg-purple-700 hover:cursor-pointer shadow-md";
 
-    const secondaryClasses = "bg-transparent border-2 border-[var(--color-highlight)] text-[var(--color-highlight)]"
+    const secondaryClasses = "bg-transparent border-2 border-[var(--color-highlight)] text-[var(--color-highlight)] hover:cursor-pointer"
 
 
     const combinedClasses = `${baseClasses} ${variant === 'primary' ? primaryClasses : secondaryClasses}`;
